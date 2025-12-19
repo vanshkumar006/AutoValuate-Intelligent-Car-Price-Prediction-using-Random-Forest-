@@ -20,8 +20,8 @@ Project Results
 The model underwent two phases of evaluation. The hyperparameter tuning significantly improved the model's stability.
 
 1. Base Model (Overfitting):
-Train R2R2: 96.47% (Model memorized the data)
-Test R2R2: 81.04%
+Train R2: 96.47% (Model memorized the data)
+Test R2: 81.04%
 Observation: The high discrepancy (approx 15%) indicated severe overfitting.
 
 2. Hyperparameter Tuning (RandomizedSearchCV):
@@ -32,8 +32,8 @@ min_samples_split: 100
 max_depth: 110
 
 3. Optimized Model Performance (Final Result):
-Train R2R2: 84.96%
-Test  R2R2 : 81.78%
+Train R2: 84.96%
+Test  R2 : 81.78%
 Test RMSE: 4269.22
 
 Observation: The gap between Train and Test scores closed significantly (less than 3.2% difference). The model is now robust and generalizes well to new data.
